@@ -12,7 +12,7 @@ function Home() {
 
   const handleClick = async () => {
     setIsError(false)
-    setData({ name: '' })
+    setData(undefined)
     try {
       if (!userText) return
       const updatedURL = `${BASE_URL}${userText}`
