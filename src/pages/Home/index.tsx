@@ -11,6 +11,8 @@ function Home() {
   const BASE_URL = 'https://swapi.dev/api/'
 
   const handleClick = async () => {
+    setIsError(false)
+    setData({ name: '' })
     try {
       if (!userText) return
       const updatedURL = `${BASE_URL}${userText}`
